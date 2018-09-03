@@ -1,0 +1,10 @@
+CHANGELOG
+
+
+_sass  ->
+	archive
+	 	- added line to change archive__item-title to $type-size-5
+	masthead
+	 	- changed font-size of menu items to 14px (added this line)
+	page
+		- changed page__content font size from 1em to $type-size-6
