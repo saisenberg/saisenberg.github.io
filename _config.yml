@@ -101,7 +101,7 @@ analytics:
 # Site Author
 author:
   name             : "Sam Isenberg"
-  avatar           : "/assets/images/avatar.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/images/avatar.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "General all-around dork."
   location         :
   email            : "isenbergsamuel@gmail.com"
