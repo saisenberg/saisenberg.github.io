@@ -1,12 +1,17 @@
 CHANGELOG
 
 
+0.09
+-link color to #294b82 from #3b5072
+-added <br> after all pictures
+-italicization of smaller text in post
+-added <small> on projects page to decrease font size
+
 
 0.08
 -darker color blue for links (_contrast)
 -changed <sup> to <small> for smaller text in QB post
 -added blank lines after all pictures
--attempted to change list element size on projects page
 
 
 0.07
