@@ -2,6 +2,14 @@ CHANGELOG
 
 
 
+0.07
+-added <sup> for smaller text in QB post
+-changed picture centering to <center></center>
+-reverted masthead height to default
+-changed masthead__menu item font-size to 14px (added line)
+-_sass --> minimal-mistakes --> contrast link color
+-_sass --> page --> page title to font-size 5 (added line)
+-_sass --> archive --> set .archive__item-excerpt max height to 300px (added line)
 
 
 0.06
