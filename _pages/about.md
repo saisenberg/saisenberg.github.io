@@ -3,7 +3,7 @@ title: "About"
 permalink: "/about/"
 ---
 
-I have a fascination with all things data - especially as it relates to sports, music, and other forms of entertainment - and am experienced in R, Python, SQL, and Tableau. Particular areas of expertise include machine learning, data analysis, and data visualization.
+I have a fascination with all things data - especially as it relates to sports, music, and other forms of entertainment. Specific areas of expertise include machine learning and data visualization, and I am experienced in Python, R, SQL, and Tableau.
 
 Originally from Philadelphia, I've since relocated to Greater Boston to study Data Science & Analytics at the University of New Hampshire. In between, I spent four years at Washington University in St. Louis, and worked at Deloitte from 2016 through 2018 as a consultant in financial services.
 

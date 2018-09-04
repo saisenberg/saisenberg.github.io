@@ -1,9 +1,24 @@
 CHANGELOG
 
 
+
+
+
+0.06
+-updated About Me language
+-centered images
+-added text on opening the 5% bin picture in larger size and attempted to center
+-updated excerpt
+-changed the size of archive__item-title to $type-size-5
+-attempted to change link colors to a nice dark blue (archive__item-title)
+-attempted to limit the height of the masthead (.masthead height as 150px)
+-removed tags from post
+
+
+0.05
 _sass  ->
 	archive
-	 	- added line to change archive__item-title to $type-size-5
+	 	- added line to change content --> archive__item-title to $type-size-5
 	masthead
 	 	- changed font-size of menu items to 14px (added this line)
 	page
