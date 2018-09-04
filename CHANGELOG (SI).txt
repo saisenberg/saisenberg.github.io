@@ -2,6 +2,13 @@ CHANGELOG
 
 
 
+0.08
+-darker color blue for links (_contrast)
+-changed <sup> to <small> for smaller text in QB post
+-added blank lines after all pictures
+-attempted to change list element size on projects page
+
+
 0.07
 -added <sup> for smaller text in QB post
 -changed picture centering to <center></center>

@@ -4,6 +4,10 @@ permalink: /projects/
 title: "Projects"
 author_profile: true
 ---
+.li {
+  font-size: $type-size-5;
+}
+
 
 <ul>
   {% for post in site.posts %}
