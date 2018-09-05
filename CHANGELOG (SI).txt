@@ -1,5 +1,8 @@
 CHANGELOG
 
+0.12
+-projects page <small>
+
 0.11
 -projects page <small>
 
