@@ -1,5 +1,7 @@
 CHANGELOG
 
+0.10
+-moved <small> on projects page
 
 0.09
 -link color to #294b82 from #3b5072
