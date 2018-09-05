@@ -1,5 +1,9 @@
 CHANGELOG
 
+0.13
+-updated link in qb post
+-linebreak at top of qb post
+
 0.12
 -projects page <small>
 
