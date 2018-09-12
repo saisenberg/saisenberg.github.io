@@ -1,5 +1,9 @@
 CHANGELOG
 
+0.14
+- updated quarterbacks folder name
+- updated clustering plot formatting
+
 0.13
 -updated link in qb post
 -linebreak at top of qb post
