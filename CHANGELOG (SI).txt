@@ -1,5 +1,8 @@
 CHANGELOG
 
+0.16
+- attempted to fix bulletpoints and lists
+
 0.15
 - added nfl-week1 post
 - changed name of quarterbacks markdown file
