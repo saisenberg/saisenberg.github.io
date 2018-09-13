@@ -1,5 +1,9 @@
 CHANGELOG
 
+0.15
+- added nfl-week1 post
+- changed name of quarterbacks markdown file
+
 0.14
 - updated quarterbacks folder name
 - updated clustering plot formatting
