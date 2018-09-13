@@ -8,5 +8,5 @@ author_profile: true
   <ul>
     {% for post in site.posts %}
       <li>
-        <small> <a href="{{ post.url }}">{{ post.title }}</a>
+        <small> <a href="{{ post.url }}">{{ post.title }}</a></small>
     {% endfor %}

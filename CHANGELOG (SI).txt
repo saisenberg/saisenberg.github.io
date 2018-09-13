@@ -1,5 +1,8 @@
 CHANGELOG
 
+0.18
+- attempted to fix project listings page
+
 0.17
 - fixed bulletpoints
 
