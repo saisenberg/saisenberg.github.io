@@ -1,5 +1,8 @@
 CHANGELOG
 
+0.19
+- updated language
+
 0.18
 - attempted to fix project listings page
 
