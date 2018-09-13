@@ -1,5 +1,8 @@
 CHANGELOG
 
+0.17
+- fixed bulletpoints
+
 0.16
 - attempted to fix bulletpoints and lists
 
