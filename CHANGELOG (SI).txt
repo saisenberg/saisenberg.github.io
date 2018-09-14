@@ -1,5 +1,8 @@
 CHANGELOG
 
+0.20
+- updated week 1 post for new time frames on scraping
+
 0.19
 - updated language
 
