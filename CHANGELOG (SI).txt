@@ -1,5 +1,8 @@
 CHANGELOG
 
+0.23
+- updated formatting
+
 0.22
 - updated asterisk formatting
 
