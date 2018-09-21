@@ -2,7 +2,7 @@
 title: "The Corner of Healthy & Wealthy: Is the World Getting Better?"
 date: 2018-08-08
 permalink: /projects/world-progress.html
-excerpt: "Swedish statistician Hans Rosling claimed that the world is far better than people believe. Let's see if we reach the same conclusions by examining - and building on - his methodology."
+excerpt: "Swedish statistician Hans Rosling claimed that the world is far better than people believe. Let's see if we reach the same conclusions."
 
 ---
 <hr>
@@ -17,7 +17,9 @@ In Rosling’s posthumous book *Factfulness*, he argues that the world is – co
 
 One of the book's key graphics, the *World Health Chart*, graphs the changes in world health and wealth, as represented by individual countries' life expectancy and GDP per capita, respectively. Compare these two stills of the chart, one from 1958 and one from 2018. The world has clearly advanced in both life expectancy and GDP, as evidenced by the upper-right shift. This change, though, happens so slowly that it goes unnoticed – another major factor in our misunderstanding of the world’s progress.
 
-<center><img src="{{ site.url }}{{ site.baseurl }}/images/world-progress/worldhealth_1958-2018.png" alt="world improvement - 1958-2018"></center><br>
+<center><img src="{{ site.url }}{{ site.baseurl }}/images/world-progress/worldhealth_1958-2018.png" alt="world improvement - 1958-2018"></center>
+
+<small><small><center>To view full-size image, right-click and select "Open image in new tab."</center></small></small>
 
 Rosling was, in all respects, a brilliant man, but we should not simply take his word that the world has been steadily improving. Instead, let’s put his theory to the test. The goal of this project is to build on Rosling’s analytic approach, while also noting whether we obtain any different conclusions. And there may be some issues with his approach: namely, Rosling only uses one dimension to group countries, and while GDP is clearly important, it may not be all-encompassing when comparing countries to each other. Additional factors, such as those relating to education or health, may differentiate countries better than GDP on its own. Furthermore, Rosling groups countries into four “levels” using differences in country GDP per capita, and as we go from Level 1 to Level 4, we see improvements in countries’ respective lifestyles. Four levels, though, may not be sufficient to compare countries. Choosing a larger number of tiers would allow for more country movement between tiers over time - although choosing too many tiers might result in too much movement, thereby making movement itself meaningless.
 

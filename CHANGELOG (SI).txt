@@ -1,5 +1,9 @@
 CHANGELOG
 
+0.26
+- updated world-progress excerpt
+- re-size images
+
 0.25
 - added world-progress post
 
