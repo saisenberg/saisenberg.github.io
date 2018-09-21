@@ -1,5 +1,8 @@
 CHANGELOG
 
+0.25
+- added world-progress post
+
 0.24
 - updated formatting & language
 
