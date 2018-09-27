@@ -1,5 +1,8 @@
 CHANGELOG
 
+0.27
+- added google sheets link to nfl-week1 post
+
 0.26
 - updated world-progress excerpt
 - re-size images
