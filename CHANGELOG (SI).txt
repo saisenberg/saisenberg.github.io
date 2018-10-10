@@ -1,5 +1,8 @@
 CHANGELOG
 
+0.28
+- added Shiny language in nfl-week1 post
+
 0.27
 - added google sheets link to nfl-week1 post
 
@@ -10,16 +13,7 @@ CHANGELOG
 0.25
 - added world-progress post
 
-0.24
-- updated formatting & language
-
-0.23
-- updated formatting
-
-0.22
-- updated asterisk formatting
-
-0.21
+0.21 - 0.24
 - updated asterisk formatting
 
 0.20
@@ -31,11 +25,8 @@ CHANGELOG
 0.18
 - attempted to fix project listings page
 
-0.17
+0.16 - 0.17
 - fixed bulletpoints
-
-0.16
-- attempted to fix bulletpoints and lists
 
 0.15
 - added nfl-week1 post
@@ -49,13 +40,7 @@ CHANGELOG
 -updated link in qb post
 -linebreak at top of qb post
 
-0.12
--projects page <small>
-
-0.11
--projects page <small>
-
-0.10
+0.10-0.12
 -moved <small> on projects page
 
 0.09
