@@ -1,5 +1,8 @@
 CHANGELOG
 
+0.29
+- added nba-sim post
+
 0.28
 - added Shiny language in nfl-week1 post
 
