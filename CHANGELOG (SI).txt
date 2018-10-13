@@ -1,5 +1,8 @@
 CHANGELOG
 
+0.30
+- formatting of nba-sim
+
 0.29
 - added nba-sim post
 
