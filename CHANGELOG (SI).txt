@@ -1,8 +1,8 @@
 CHANGELOG
 
-0.31
+0.31-0.32
 - linkedin links on world-progress
-- added mlb-asg post
+- added mlb-asg post, updated formatting
 
 0.30
 - formatting of nba-sim
