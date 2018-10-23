@@ -93,4 +93,4 @@ Between 1990 and 2000, Rwanda exhibited the largest decade-to-decade regression 
 
 So – what can we conclude about the world? Was Rosling correct to determine that, contrary to popular belief, the world is currently better than ever before? Our analysis certainly supports Rosling’s arguments; even when adding nine features to Rosling’s two, we still see countries improving from decade to decade, regardless of their tier. In future versions of this project, however, I would like to collect data spanning further back than 1990, as well as an even more thorough set of features.
 
-*Special thanks to project teammates Frawley Barton, Eric Dorata, Anna Kot, and [Mark McComiskey](https://www.linkedin.com/in/markmccomiskey/).*
+*Special thanks to project teammates [Frawley Barton](https://www.linkedin.com/in/frawley-barton-3507903b/), [Eric Dorata](https://www.linkedin.com/in/ericdorata/), [Anna Kot](https://www.linkedin.com/in/kotanna/), and [Mark McComiskey](https://www.linkedin.com/in/markmccomiskey/).*
