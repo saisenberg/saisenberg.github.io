@@ -1,5 +1,8 @@
 CHANGELOG
 
+0.34
+- added lyrics-classifier post
+
 0.31-0.33
 - linkedin links on world-progress
 - added mlb-asg post, updated formatting
