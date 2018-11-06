@@ -1,5 +1,8 @@
 CHANGELOG
 
+0.35
+- show 20+ posts on front page
+
 0.34
 - added lyrics-classifier post
 

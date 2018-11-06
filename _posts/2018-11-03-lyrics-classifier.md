@@ -49,7 +49,7 @@ The gradient boosting model most commonly misclassified songs as metal/rock – 
 
 Just for fun, we can also test out the model on a few previously unseen sets of lyrics. I’ve found the XGBoost model much more reliable when deployed on full sets of lyrics rather than verse-long snippets, so, for the sake of space, these examples will instead utilize the SVM model. *svmLyricClassifier* is a small function I wrote which preprocesses a given set of text and uses the SVM model to predict a song genre for that text. As follows are the model’s results for songs of every genre:
 
-<center><img src="{{ site.url }}{{ site.baseurl }}/images/lyrics-classifier/svm_predictions.png" alt="SVM predictions"></center><br>
+<center><img src="{{ site.url }}{{ site.baseurl }}/images/lyrics-classifier/svm_predictions.png" alt="SVM predictions"></center>
 
 <small><small><center>To view full-size image, right-click and select "Open image in new tab."</center></small></small>
 <hr>
