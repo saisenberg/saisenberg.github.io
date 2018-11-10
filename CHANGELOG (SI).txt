@@ -1,6 +1,6 @@
 CHANGELOG
 
-0.35
+0.35-0.36
 - show 20+ posts on front page
 
 0.34
