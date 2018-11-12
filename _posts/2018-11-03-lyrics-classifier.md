@@ -6,7 +6,7 @@ excerpt: "Can machine learning identify a song’s genre solely from its lyrical
 
 ---
 <hr>
-In today’s day and age, we’re seeing more crossover than ever between musical artists of different genres. Rappers regularly feature in pop songs heard on the radio nationwide, and soul singers often perform the choruses of rap songs. Heck, renowned rock musician Paul McCartney [teamed up](https://www.youtube.com/watch?v=kt0g4dWxEBo) with Kanye West and Rihanna for an unexpected 2015 collaboration.
+In today’s day and age, we’re seeing more crossover than ever between musical artists of different genres. Rappers regularly feature in pop songs heard on the radio nationwide, and soul singers often perform the choruses of rap songs. Heck, even renowned rock musician Paul McCartney [teamed up](https://www.youtube.com/watch?v=kt0g4dWxEBo) with Kanye West and Rihanna for an unexpected 2015 collaboration.
 
 In the first installment of this project, I’ll be building a model that predicts a song’s genre based solely on its lyrical content.
 <hr>
@@ -15,7 +15,7 @@ As per usual, my first step in the modeling process was data collection and clea
 
 First, though, I wrote a few small web scrapers to collect the names of artists in six different musical genres – **country**, **metal**, **pop**, **rap**, **rock**, and **soul** – from [*Billboard*](billboard.com), [*Ranker*](https://ranker.com), and [*TheTopTens*](https://www.thetoptens.com).
 
-Next, I used Ewen Henderson’s *geniusR*(https://cran.r-project.org/web/packages/geniusr/geniusr.pdf) package to scrape lyrics straight from [*Genius*](http://genius.com) (formerly known as *RapGenius*) and create a separate corpus of lyrics for each genre. *Genius* hosts lyrics for a relatively wide array of musicians, and I’ve found that the site, for the most part, keeps their lyrics relatively tidy.
+Next, I used Ewen Henderson’s [*geniusR*](https://cran.r-project.org/web/packages/geniusr/geniusr.pdf) package to scrape lyrics straight from [*Genius*](http://genius.com) (formerly known as *RapGenius*) and create a separate corpus of lyrics for each genre. *Genius* hosts lyrics for a relatively wide array of musicians, and I’ve found that the site, for the most part, keeps their lyrics relatively tidy.
 
 I wrote a *collectGenre* function which, given a list of genre artists and a few additional parameters, will randomly scrape the lyrics of artists belonging to that genre. To ensure a reasonable variety of artists within each corpus, I scraped a maximum of 75 songs per artist. Finally, I discarded any result with a title that includes the phrases “album art”, “tracklist”, “script”, or “interview”, since *Genius*’s lyrics occasionally include transcripts of additional, non-song artist materials.
 
@@ -25,8 +25,8 @@ The below picture demonstrates this function in use; here, *collectGenre* has be
 
 To prepare each genre corpus for predictive modeling, I brought the scraped lyrics into Python and performed the following steps:
 
-* **Remove misclassified artists**: Some artists – particularly country and soul musicians – do not yet have their lyrics listed on *Genius*. Consequently, the function will erroneously return lyrics from the first-listed artist in the search results, whether or not that artist actually exists within the appropriate genre. Nearly 75 Tyler, The Creator songs, for instance, mistakenly appeared in the dataset of country songs, and had to be manually removed.
-* **Remove dual-genre artists**: I found that the model was being confused by a few specific artists who, while initially classified as pop, could just as easily be classified as another genre. Chris Brown, for instance, really fits as a pop, rap, and soul artist, and Shania Twain is just as much a pop artist as she is a country singer.
+* **Remove misclassified artists**: Some artists – particularly country and soul musicians – do not yet have their lyrics listed on *Genius*. Consequently, the function will erroneously return lyrics from the first-listed artist in the search results, whether or not that artist actually exists within the appropriate genre. Nearly 75 Tyler, The Creator songs, for instance, mistakenly appeared in the dataset of country songs and had to be manually removed.
+* **Remove dual-genre artists**: I found that the model was being confused by a few specific artists who, while initially classified as pop, could just as easily be classified as another genre. Chris Brown, for instance, could fit as a pop, rap, and soul artist, and Shania Twain is just as much a pop artist as she is a country singer.
 *	**Clean all text**: This includes (a) removing everything between hard brackets, such as “[Verse 1]”; (b) changing certain types of slang, such as “walkin’” to “walking”; (c) removing all shorthand for repetition of a certain line, such as “x4”; (d) standardizing different forms of apostrophe; (e) elongating all contractions; and (f) removing all new lines (“\n”) and punctuation.
 * **Stem words**: Stemming words refers to transforming every word to its base form. This way, there will be no distinction between the words “operation” and “operative”, since both will be converted to “oper”.
 * **Combine metal & rock**: I found there not to be enough of a distinction between metal and rock lyrics to justify splitting the two. All models performed the best after having combined the genres into one category.
