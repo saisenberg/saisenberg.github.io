@@ -1,6 +1,6 @@
 CHANGELOG
 
-0.38-0.40
+0.38-0.42
 - added songwriterbot post
 - added external links section to projects page
 
