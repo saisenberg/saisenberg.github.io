@@ -11,9 +11,11 @@ author_profile: true
         <small> <a href="{{ post.url }}">{{ post.title }}</a></small>
     {% endfor %}
 
+</ul>
 <br>
 <br>
 
-<h3>Projects (External Links)</h3>
+<h3>External Links</h3>
+<ul>
 <li><small><a href="https://saisenberg.shinyapps.io/weekly-nfl-sentiment/">NFL Sentiment: R Shiny App</a> • <a href="https://docs.google.com/spreadsheets/d/17FIBsCmEbSYLDrcfK-z7y5cVPAKAWOQPi5a4kl3gCoE/edit#gid=560609653">Raw Data</a></small></li>
 <li><small><a href="http://songwriterbot.herokuapp.com">SongwriterBot</a></small></li>
