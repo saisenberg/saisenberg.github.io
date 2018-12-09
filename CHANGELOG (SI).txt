@@ -1,5 +1,9 @@
 CHANGELOG
 
+0.38
+- added songwriterbot post
+- added external links section to projects page
+
 0.37
 - update lyrics-classifier formatting
 
