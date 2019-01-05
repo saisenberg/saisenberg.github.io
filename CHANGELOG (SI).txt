@@ -1,5 +1,8 @@
 CHANGELOG
 
+0.45
+- removed paragraph in SWB
+
 0.38-0.44
 - added songwriterbot post
 - added external links section to projects page
