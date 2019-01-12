@@ -1,5 +1,8 @@
 CHANGELOG
 
+0.46
+-added pitch-mix post
+
 0.45
 - removed paragraph in SWB
 
