@@ -1,7 +1,8 @@
 CHANGELOG
 
-0.47
+0.47-0.48
 - added lyrics-clustering post
+- updated formatting of lyrics-clustering
 
 0.46
 -added pitch-mix post

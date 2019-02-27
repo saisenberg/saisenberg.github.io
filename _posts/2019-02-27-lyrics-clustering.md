@@ -16,22 +16,28 @@ Let's initialize a *LyricsAnalyzer* object, which we'll use to store and process
 
 First, let's enter the *params.py* file and update our artist dictionary accordingly. (Make sure to also change your path parameters as appropriate.)
 
-```artist_dict = {
+```
+
+artist_dict = {
   'country':[],
   'metal_rock':[],
   'pop':[],
   'rap':[],
   'soul':[]
 }
+
 ```
 
 In *run.py*, we can now easily prepare our Lil Peep data frame and initialize our *LyricsAnalyzer* object:
 
-```# Prepare data frame with lyrics from specified artists
+```
+
+# Prepare data frame with lyrics from specified artists
 lyrics_df = prepareLyricsFrame(artist_dict = artist_dict, path = corpus_path)
 
 # Create LyricsAnalyzer object
 la = LyricsAnalyzer(lyrics_df)
+
 ```
 
 Upon initialization of our *LyricsAnalyzer* object, there are a few important behind-the-scenes methods - TF-IDF and Count vectorization - that automatically act on our set of lyrics. TF-IDF collects a list of every term that appears in *any* of our selected songs (note that "terms" are not necessarily limited to one word), and counts how often each term appears in each song. It then re-weights every frequency value according to the number of documents in which the associated term appears. Words that appear in virtually every song ("the", "and", "or", etc.) will be down-weighted, and vice-versa.
@@ -42,11 +48,14 @@ The *LyricsAnalyzer* object also initializes with a CountVectorized matrix, whic
 
 By calling the *get_nmf_topics* and *get_lda_topics* methods, we're able to extract the top words for as many topics as we request. It's important to remember that for both techniques, *we're* the ones who choose the number of topics to extract - and our choices will have a significant impact on the extracted topics. Picking too few topics might result in each topic being overly vague and unfocused, while choosing too many will stratify our topics too narrowly. I've generally had the most success with somewhere between roughly seven and ten topics, but I recommend experimenting for yourself. Here, I'll be using eight topics for NMF, and seven for LDA.
 
-```# Collect the top N topics (LDA)
+```
+
+# Collect the top N topics (LDA)
 lda_topics = la.get_lda_topics(n_topics=8)
 
 # Collect the top N topics (NMF)
 nmf_topics = la.get_nmf_topics(n_topics=8)
+
 ```
 
 Let's take a look at Lil Peep's topics:
@@ -65,12 +74,18 @@ Finally, I've also built a Doc2Vec method into the *LyricsAnalyzer* object, with
 
 Running Doc2Vec on our set of lyrics is very simple. I'll be using the default parameters for vector length and window, among other parameters, but you can adjust these as you see fit. The default vector length is three-hundred - on the outskirts of the common range of one- to three-hundred. The method will return to us a series of vectors, each one of length three-hundred, with every vector corresponding to a different song.
 
-```la.doc2vec()
+```
+
+la.doc2vec()
+
 ```
 
 For purposes of more efficient song-to-song comparison, we'll use [t-SNE](https://distill.pub/2016/misread-tsne/) to condense our three-hundred column dataset into one with just two features. This is not an exact exercise, and post-t-SNE results are meant to be taken only as an approximation. While distances between groups of points are meaningful, they should not be taken literally. Further, we should not draw any conclusions from a point's placement on the *x*- or *y*- axis; song positions are only meaningful when examined in relation to other songs on the same plot.
 
-```la.tsne_from_d2v(return_df=False)
+```
+
+la.tsne_from_d2v(return_df=False)
+
 ```
 
 After writing the resulting image to a .*csv* file, we can hop into *R* to visualize our results. I've colored the data points by artist and manually annotated some of the more interesting song placements. Let's see what Doc2Vec made of our lyrics collection:
@@ -87,7 +102,7 @@ Aside from Tyler, The Creator and Earl Sweatshirt - both of whose clusters are, 
 
 I'm compiled some more fun clustering examples below. Even better, I haven't limited my search to just rappers, either - you'll see comparisons involving pop artists, rock bands, and more! When appropriate, I've labeled particularly noteworthy data points in the same manner as above.
 
-<center><blockquote class="imgur-embed-pub" lang="en" data-id="a/FBGa9CB"><a href="//imgur.com/a/FBGa9CB">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script></center><br>
+[**See all images here!**](https://imgur.com/a/FBGa9CB)
 
 In general, it looks like rap songs tend to cluster by artist better than songs from other genres. My hunch is that this phenomenon, at least in part, is due to many rappers having distinct catchphrases or adlibs that they reuse from song to song. Country, pop, and rock artists generally don't follow this trend, and certain genres (I'm looking at you, country) are often chastisted for what is perceived as redundant lyrical content between different artists.
 
