@@ -8,7 +8,7 @@ excerpt: "For all aspiring musicians out there - SongwriterBot's here to make yo
 <hr>
 For quick access to *SongwriterBot*, click [here](http://songwriterbot.herokuapp.com/)!
 <hr>
-In [Part 1](https://saisenberg.com/projects/lyrics-classifier.html) of my lyrics project, I scraped thousands of song lyrics from [*Genius*](http://genius.com/) and developed a model which classifies songs into genres based solely on their lyrical content. Now, in the second and final installment of the project, I’ll provide a brief explanation of how I developed *SongwriterBot*, which writes its own randomly generated songs.
+In [Part 1](https://saisenberg.com/projects/lyrics-classifier.html) of my lyrics project, I scraped thousands of song lyrics from [*Genius*](http://genius.com/) and developed a model which classifies songs into genres based solely on their lyrical content. Now, in the second and final [[okay, maybe not *final*](https://saisenberg.com/projects/lyrics-clustering.html)] installment of the project, I’ll provide a brief explanation of how I developed *SongwriterBot*, which writes its own randomly generated songs.
 
 This project utilizes Jeremy Singer-Vine's amazing [*markovify*](https://github.com/jsvine/markovify) package to create separate Markov models from the scraped songs of each genre. If you read Part 1, you’ll know that I scraped 1,500 songs per genre; here, I scraped approximately ten thousand country, metal, pop, rap, rock, and soul songs. For each genre, every song was split line-by-line and combined into a Markov model, which can randomly generate sentences from the text.
 

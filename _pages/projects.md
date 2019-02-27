@@ -12,7 +12,7 @@ author_profile: true
     {% endfor %}
 <br>
 <br>
-</li></li></li></li></li></li></li></li></ul>
+</li></li></li></li></li></li></li></li></li></ul>
 
 <h1 class="page__title">External Links</h1>
 <ul>
