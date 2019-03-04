@@ -1,6 +1,6 @@
 CHANGELOG
 
-0.47-0.48
+0.47-0.49
 - added lyrics-clustering post
 - updated formatting of lyrics-clustering
 
