@@ -1,6 +1,6 @@
 CHANGELOG
 
-0.50
+0.50-0.51
 - added mlb-player-generation post
 
 0.47-0.49

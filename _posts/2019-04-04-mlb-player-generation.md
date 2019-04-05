@@ -16,7 +16,7 @@ Before we generate anything fake, let’s first look through our dataset of real
 
 It’s important to note that the generator – at least how I’ve set it up – expects every image in our dataset to be equally sized. After scraping each image, then, I use the [*PIL*](https://pillow.readthedocs.io/en/stable/) library to reshape every image into a standard size. For reference, here are a few examples of the images our model hopes to replicate; you’ll see that they’re all equally sized and adhere to the setup described above. Feel free to reach out if you’re interested in the scraper code or the pictures themselves.
 
-<center><img src="{{ site.url }}{{ site.baseurl }}/images/mlb-player-generation/images/resized_scraped_images_sample.png" alt="resized scraped mlb players"></center><br>
+<center><img src="{{ site.url }}{{ site.baseurl }}/images/mlb-player-generation/resized_scraped_images_sample.png" alt="resized scraped mlb players"></center><br>
 
 Our generator will accept a series of a hundred random numbers as an input, and will use a series of convolutional layers (along with upsampling, batch normalization, and dropout at each layer) to generate an array of size 64x64x3 as an output. Each of our output images will be 64 pixels wide and 64 pixels high, and, because we’re working with colorful images (in an RGB scale), we use 3 as our third dimension. Every number in our resulting array corresponds with an RGB value, which can range between zero and 255. Note that if we were generating our images in grayscale, our output would be in a 64x64x1 array, rather than 64x64x3.
 
@@ -26,22 +26,22 @@ Once we set a certain number of epochs and a batch size, we can keep training ou
 
 Let’s see how our generated images change over the first thousand epochs, starting with the very first set:
 
-<center><img src="{{ site.url }}{{ site.baseurl }}/images/mlb-player-generation/images/gif_0-1000.gif" alt="first thousand epochs"></center><br>
+<center><img src="{{ site.url }}{{ site.baseurl }}/images/mlb-player-generation/gif_0-1000.gif" alt="first thousand epochs"></center><br>
 
 After epoch #1, our generator essentially knows nothing at all – its output is entirely static. By the hundredth epoch, the model has already learned enough to create a very fuzzy set of head-shaped objects, which become progressively more well-defined as we iterate through the epochs. By epoch #1000, the images are still fuzzy, but the generator has clearly learned much more about what “constitutes” a face.
 
 Let’s see how the generator improves through the twelve thousandth epoch. We’ll keep observing changes in hundred-epoch intervals, but we’ll move a bit faster now:
 
-<center><img src="{{ site.url }}{{ site.baseurl }}/images/mlb-player-generation/images/gif_1000-12000.gif" alt="epochs 1K to 12K"></center><br>
+<center><img src="{{ site.url }}{{ site.baseurl }}/images/mlb-player-generation/gif_1000-12000.gif" alt="epochs 1K to 12K"></center><br>
 
 It’s a bit harder to follow the generator progress through so many images, but we can see the model creating more and more detailed pictures. Actual facial features, facial hair, and even ballcap logos begin to appear in our generated images, and the images have become sharper and more well-defined.
 
 Finally, we’ll see how the generated images change up to the sixteen thousandth epoch (which is as long as I've run the model so far):
 
-<center><img src="{{ site.url }}{{ site.baseurl }}/images/mlb-player-generation/images/gif_12000-16000.gif" alt="epochs 12K to 16K"></center><br>
+<center><img src="{{ site.url }}{{ site.baseurl }}/images/mlb-player-generation/gif_12000-16000.gif" alt="epochs 12K to 16K"></center><br>
 
 There’s clearly still more work to be done, but we’ve generated images that legitimately resemble real baseball players! While these pictures might not fool anyone as they are (I should mention that by the 16,000th epoch, the discriminator was still able to distinguish real from fake), re-scaling the pictures to their original aspect ratios might make the task slightly more challenging. Just for fun, I’ve compiled some of the best-looking generations below:
 
-<center><img src="{{ site.url }}{{ site.baseurl }}/images/mlb-player-generation/images/best_generated_images.png" alt="best generated players"></center><br>
+<center><img src="{{ site.url }}{{ site.baseurl }}/images/mlb-player-generation/best_generated_images.png" alt="best generated players"></center><br>
 
 By continuing to fine-tune the model’s parameters, as well as running the model for more epochs, I hope to eventually create generated images that are truly indistinguishable from real ones. Parameters to tune include learning rate, number of convolutional layers, and number of nodes at each layer, among many others. Again, many thanks to the [AI Insider](https://medium.com/datadriveninvestor/generating-human-faces-with-keras-3ccd54c17f16), whose article was instrumental in preparing this project. Hope you found it interesting!
