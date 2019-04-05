@@ -1,6 +1,6 @@
 ---
 title: "These Baseball Players Do Not Exist"
-date: 2019-04-24
+date: 2019-04-04
 permalink: /projects/mlb-player-generation.html
 excerpt: "Q: What's easier than organizing an expansion draft? A: Generating your own roster of fake baseball players."
 
