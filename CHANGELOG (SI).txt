@@ -1,5 +1,8 @@
 CHANGELOG
 
+0.53
+- added rap-networks post
+
 0.50-0.52
 - added mlb-player-generation post
 
