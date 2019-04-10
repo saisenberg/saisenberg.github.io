@@ -22,10 +22,10 @@ First, though, some important notes about the project:
 
 Let’s take a look at the resulting map. Because the image is so large, you’ll likely have to right-click the image and view it in a new tab.
 
-<center><img src="{{ site.url }}{{ site.baseurl }}/images/rap-networks/networks_1x.png" alt="rap networks"></center><br>
+<center><img src="{{ site.url }}{{ site.baseurl }}/images/rap-networks/networks_1x2.png" alt="rap networks"></center><br>
 
 The network map does an excellent job of visualizing different “groups” of rappers who most commonly feature on each other’s songs. For example, the members of Odd Future, Pro Era, and the Wu-Tang Clan, among other groups or collectives, appear to have their own distinct respective “sections” of the map.
 
-We can even see different styles – or even *eras* – of rap appear in different areas on the network. Much of the left-hand section of the map is dedicated to rap from the 1990s or early 2000s, whereas many “SoundCloud rappers” appear farther towards the right. In addition, nearly all the most “mainstream” rappers appear towards the center of the map, which makes sense; artists like DJ Khaled, Rick Ross, and Lil Wayne, by virtue of their popularity and longevity, have had the chance to work with a particularly widespread set of rappers.
+We can even see different styles – or even *eras* – of rap appear in different areas on the network. Much of the left-hand section of the map is dedicated to rap from the 1990s or early 2000s, whereas many “SoundCloud rappers” appear farther towards the right. In addition, nearly all the most “mainstream” rappers appear towards the center of the map, which makes sense; artists like DJ Khaled, Rick Ross, and Lil Wayne, by virtue of their popularity and longevity, have had the chance to work with a particularly widespread set of rappers. Also, the relative sizes of the red dots represent the relative "between centralities" of each rapper. The more often a certain rapper appears along the shortest "path" connecting two other artists, the larger their between centrality (and corresponding red point) will be. It's evident that, along with the trio of rappers mentioned above, Juicy J, Snoop Dogg, and Busta Rhymes all have relatively large between centralities.
 
 All data and code are posted on my [*GitHub*](https://github.com/saisenberg/rap-networks). Hope you enjoyed!
