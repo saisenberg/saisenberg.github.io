@@ -2,7 +2,7 @@
 title: "Comparing Song, Album, and Artist Metrics with Spotify’s API"
 date: 2019-05-18
 permalink: /projects/spotify-data-comparator.html
-excerpt: "An interactive dashboard that visualizes (and downloads!) data of musical characteristics."
+excerpt: "An interactive dashboard that visualizes (and downloads!) musical metadata."
 
 ---
 <hr>

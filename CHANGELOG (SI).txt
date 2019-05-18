@@ -1,7 +1,8 @@
 CHANGELOG
 
-0.57-0.58
+0.57-0.59
 - updated bio
+- updated spotify-data-comparator subtitle
 
 0.56
 - added spotify-data-comparator post
