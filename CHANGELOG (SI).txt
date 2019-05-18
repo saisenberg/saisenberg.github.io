@@ -1,6 +1,6 @@
 CHANGELOG
 
-0.57
+0.57-0.58
 - updated bio
 
 0.56
