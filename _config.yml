@@ -102,7 +102,7 @@ analytics:
 author:
   name             : "Sam Isenberg"
   avatar           : "/images/avatar.JPG" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              :
+  bio              : " "
   location         :
   email            : "isenbergsamuel@gmail.com"
   uri              :
