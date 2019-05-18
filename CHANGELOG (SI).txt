@@ -1,5 +1,10 @@
 CHANGELOG
 
+0.56
+- added spotify-data-comparator post
+- removed bio
+- shortened "about me" section
+
 0.53-0.55
 - added rap-networks post
 
